@@ -75,7 +75,7 @@ customer_order_history as (
     on orders.customer_id = customers.customer_id
 
     left outer join payments
-    on orders.order_id = payments.orderid
+    on orders.order_id = payments.order_id
 
     where orders.order_status not in ('pending') and payments.payment_status != 'fail'
 
@@ -108,7 +108,7 @@ final as (
     on orders.customer_id = customer_order_history.customer_id
 
     left outer join payments
-    on orders.order_id = payments.orderid
+    on orders.order_id = payments.order_id
 
     where payments.payment_status != 'fail'
 
