@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: jaffle_shop
     description: A clone of a Postgres application database.
-    database: raw
+    database: workspace
     schema: jaffle_shop
     tables:
       - name: customers
@@ -11,7 +11,7 @@ sources:
         columns:
           - name: id
             description: Primary key for customers.
-            tests:
+            data_tests:
               - unique
               - not_null
 
@@ -20,7 +20,7 @@ sources:
         columns:
           - name: id
             description: Primary key for orders.
-            tests:
+            data_tests:
               - unique
               - not_null
         loaded_at_field: _etl_loaded_at
