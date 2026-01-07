@@ -43,3 +43,8 @@ models:
       +materialized: table
     staging:
       +materialized: view
+
+
+vars:
+    high_order_value: 50
+    order_status: "shipped"
