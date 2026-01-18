@@ -14,7 +14,7 @@ profile: 'default'
 # found in the "models/" directory. You probably won't need to change these!
 model-paths: ["models"]
 analysis-paths: ["analyses"]
-test-paths: ["tests"]
+test-paths: ["data-tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
@@ -47,4 +47,4 @@ models:
 
 vars:
     high_order_value: 50
-    order_status: "shipped"
+    order_status: "shipped"    

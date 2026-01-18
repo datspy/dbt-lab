@@ -1,0 +1,9 @@
+models:
+  - name: high_value_orders
+  - name: fct_orders
+    columns:
+      - name: amount
+        data_tests:
+          - amount_greater_than_zero
+        
+            
